@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="xu-ovvo 的个人主页" />
+  <title>xu-ovvo · 个人主页</title>
+  <style>
+    :root {
+      --bg-1: #0f172a;
+      --bg-2: #1e1b4b;
+      --accent: #6366f1;
+      --accent-2: #22d3ee;
+      --text: #e2e8f0;
+      --card: rgba(255, 255, 255, 0.06);
+      --border: rgba(255, 255, 255, 0.12);
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: "Segoe UI", "PingFang SC", "Microsoft YaHei", -apple-system, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, var(--bg-1), var(--bg-2) 55%, #164e63);
+      color: var(--text);
+      padding: 24px;
+    }
+    .card {
+      width: 100%;
+      max-width: 560px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 48px 40px;
+      backdrop-filter: blur(12px);
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+      text-align: center;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 28px 70px rgba(0, 0, 0, 0.45);
+    }
+    .avatar {
+      width: 96px;
+      height: 96px;
+      margin: 0 auto 20px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--accent), var(--accent-2));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 38px;
+      font-weight: 700;
+      color: #fff;
+      box-shadow: 0 8px 24px rgba(99, 102, 241, 0.4);
+      user-select: none;
+    }
+    h1 {
+      font-size: 30px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      background: linear-gradient(90deg, #a5b4fc, var(--accent-2));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+    .tagline {
+      margin-top: 10px;
+      font-size: 16px;
+      color: #94a3b8;
+      line-height: 1.6;
+    }
+    .badges {
+      margin-top: 18px;
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    .badge {
+      font-size: 12px;
+      padding: 4px 12px;
+      border-radius: 999px;
+      background: rgba(99, 102, 241, 0.18);
+      border: 1px solid rgba(99, 102, 241, 0.35);
+      color: #c7d2fe;
+    }
+    .links {
+      margin-top: 28px;
+      display: flex;
+      justify-content: center;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+    .links a {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 10px 20px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+      color: #fff;
+      background: linear-gradient(135deg, var(--accent), #8b5cf6);
+      box-shadow: 0 6px 18px rgba(99, 102, 241, 0.3);
+      transition: opacity 0.2s ease, transform 0.2s ease;
+    }
+    .links a:hover {
+      opacity: 0.88;
+      transform: translateY(-2px);
+    }
+    .links a.gh {
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid var(--border);
+    }
+    footer {
+      margin-top: 32px;
+      font-size: 12px;
+      color: #64748b;
+    }
+    @media (max-width: 480px) {
+      .card { padding: 36px 22px; }
+      h1 { font-size: 24px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <div class="avatar">xu</div>
+    <h1>xu-ovvo</h1>
+    <p class="tagline">你好，我是 xu-ovvo。一名热爱代码与创造的开发者，正在 GitHub Pages 上安家。</p>
+    <div class="badges">
+      <span class="badge">Developer</span>
+      <span class="badge">GitHub Pages</span>
+      <span class="badge">Open Source</span>
+    </div>
+    <nav class="links">
+      <a class="gh" href="https://github.com/xu-ovvo" target="_blank" rel="noopener">GitHub</a>
+      <a href="mailto:hello@example.com">联系我</a>
+    </nav>
+    <footer>© 2026 xu-ovvo · Built with GitHub Pages</footer>
+  </main>
+</body>
+</html>
